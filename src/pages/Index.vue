@@ -5,14 +5,19 @@
       src="~assets/quasar-logo-vertical.svg"
       style="width: 200px; height: 200px"
     >
+    <h3>{{ dados.label }}</h3>
   </q-page>
 </template>
 
 <script>
 export default {
   name: 'PageIndex',
-  props: {
-    
+  computed: {
+    dados: {
+      get () {
+        return this.$store.state.dados.alunosVinculados
+      }
+    }
   }
 }
 </script>
