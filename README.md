@@ -1,4 +1,4 @@
-# Boletim Fácil (aep)
+# AEP - Boletim Fácil
 
 Visualizador de boletins.
 
