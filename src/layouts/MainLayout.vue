@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh lpR fFf" class="bg-grey-1">
-    <q-header bordered class="bg-white text-grey-8" height-hint="64">
+    <q-header elevated class="bg-primary text-white" height-hint="64">
       <q-toolbar class="GNL__toolbar">
         <!-- <q-btn
           flat
@@ -18,25 +18,7 @@
 
         <q-space />
         <div class="q-gutter-x-lg row items-center no-wrap">
-          <q-select 
-            borderless 
-            v-model="alunoSelecionado"
-            :options="alunosVinculados"
-            label="Aluno"
-            style="width: 200px"
-            emit-value
-            map-options
-          />
-          <q-select 
-            borderless 
-            v-model="anoSelecionado" 
-            :options="anos" 
-            label="Ano Letivo" 
-            style="width: 100px"
-            emit-value
-            map-options
-          />
-          <q-btn round dense flat color="grey-8" icon="notifications">
+          <q-btn round dense flat color="white" icon="notifications">
             <q-badge color="red" text-color="white" floating>
               2
             </q-badge>
@@ -85,22 +67,6 @@ export default {
   name: 'Layout',
   data () {
     return {
-      leftDrawerOpen: false,
-      anos: [
-        { value: 0, label: '2021' },
-        { value: 1, label: '2020' },
-        { value: 2, label: '2019' },
-        { value: 3, label: '2018' },
-        { value: 4, label: '2017' },
-      ],
-      anoSelecionado: 0,
-      alunosVinculados: [
-        { value: 0, label: 'Danielle Sayuri' },
-        { value: 1, label: 'Everton Carniato' },
-        { value: 2, label: 'João Eduardo' },
-        { value: 3, label: 'Maria Gabriela' }
-      ],
-      alunoSelecionado: null,
       links1: [
         { icon: 'web', text: 'Notas' },
         { icon: 'person', text: 'For you' },
