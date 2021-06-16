@@ -8,7 +8,7 @@
       separator="vertical"
     >
       <template v-slot:top>
-        <div class="col-10 q-table__title">Boletim</div>
+        <div class="col-10 q-table__title text-weight-bold">Boletim</div>
         <div class="col-2 row items-center no-wrap justify-end">
           <q-select
             v-model="anoSelecionado"

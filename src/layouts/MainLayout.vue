@@ -2,18 +2,9 @@
   <q-layout view="hHh lpR fFf" class="bg-grey-1">
     <q-header elevated class="bg-primary text-white" height-hint="64">
       <q-toolbar class="GNL__toolbar">
-        <!-- <q-btn
-          flat
-          dense
-          round
-          @click="leftDrawerOpen = !leftDrawerOpen"
-          aria-label="Menu"
-          icon="menu"
-          class="q-mr-sm"
-        /> -->
 
         <q-toolbar-title shrink class="row items-center no-wrap">
-          <span class="q-ml-sm">Boletim Fácil</span>
+          <span class="q-ml-sm text-weight-bold">BoletimFácil</span>
         </q-toolbar-title>
 
         <q-space />
@@ -26,36 +17,13 @@
           </q-btn>
           <q-btn round flat>
             <q-avatar size="26px">
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+              <img src="../assets/man.png">
             </q-avatar>
-            <q-tooltip>Responsável</q-tooltip>
+            <q-tooltip>Vanderlei Oliveira</q-tooltip>
           </q-btn>
         </div>
       </q-toolbar>
     </q-header>
-
-    <!-- <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      overlay
-      bordered
-      content-class="bg-white"
-      :width="280"
-    >
-      <q-scroll-area class="fit">
-        <q-list padding class="text-grey-8">
-          <q-item class="GNL__drawer-item" v-ripple v-for="link in links1" :key="link.text" clickable>
-            <q-item-section avatar>
-              <q-icon :name="link.icon" />
-            </q-item-section>
-            <q-item-section>
-              <q-item-label>{{ link.text }}</q-item-label>
-            </q-item-section>
-          </q-item>
-        </q-list>
-      </q-scroll-area>
-    </q-drawer> -->
-
     <q-page-container>
       <router-view />
     </q-page-container>

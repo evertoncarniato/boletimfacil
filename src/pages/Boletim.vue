@@ -3,7 +3,6 @@
     <div>
       <div class="q-gutter-x-lg row items-center no-wrap justify-end">
         <q-select
-          
           v-model="alunoSelecionado"
           :options="alunosVinculados"
           label="Aluno"
@@ -24,14 +23,14 @@ import Aluno1 from "src/components/Aluno1.vue";
 import Aluno2 from "src/components/Aluno2.vue";
 export default {
   components: { Aluno1, Aluno2 },
-  name: "PageIndex",
+  name: "Boletim",
   data() {
     return {
       alunosVinculados: [
-        { value: 0, label: "Marcio Silva" },
+        { value: 0, label: "Marcio Oliveira" },
         { value: 1, label: "Valentina Oliveira" }
       ],
-      alunoSelecionado: { value: 0, label: "Marcio Silva" },
+      alunoSelecionado: { value: 0, label: "Marcio Oliveira" },
     };
   },
   computed: {
